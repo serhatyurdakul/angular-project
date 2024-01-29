@@ -1,3 +1,4 @@
+import { Project } from './../_models/Project';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -8,5 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './project-card.component.css',
 })
 export class ProjectCardComponent {
-  @Input() projectName: string = '';
+  @Input() project = {} as Project;
 }
