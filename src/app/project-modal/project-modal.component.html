@@ -1,4 +1,29 @@
 <div class="modal-header">
   <h2>{{ project.name }}</h2>
-  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  ></button>
+</div>
+
+<div class="modal-body">
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="img-wrapper">
+        <img src="../../assets/images/image1.png" alt="slide" />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="img-wrapper">
+        <img src="../../assets/images/image2.png" alt="slide" />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="img-wrapper">
+        <img src="../../assets/images/image3.png" alt="slide" />
+      </div>
+    </ng-template>
+  </ngb-carousel>
 </div>

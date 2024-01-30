@@ -1,11 +1,12 @@
 
 import { Project } from '../_models/Project';
 import { Component, inject, Input } from '@angular/core';
-import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModal,NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-project-modal',
   standalone: true,
-  imports: [],
+  imports: [NgbCarouselModule],
   templateUrl: './project-modal.component.html',
   styleUrl: './project-modal.component.css',
 })
