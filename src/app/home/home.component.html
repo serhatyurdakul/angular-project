@@ -1,7 +1,7 @@
 <div class="container">
   <!-- About Me -->
-  <div class="row">
-    <div class="col-lg shadow border m-1 pt-2">
+  <div class="row d-flex justify-content-center">
+    <div class="col-lg shadow border m-1 pt-3">
       <div class="text-center">
         <h2>About Me</h2>
         <img
@@ -20,11 +20,28 @@
     </div>
     <!-- Featured Project -->
 
-    <div class="col-lg shadow border m-1 pt-2">
+    <div class="col-lg shadow border m-1 pt-3">
       <div class="text-center">
         <h2>Featured Project</h2>
         <h4>{{ featuredproject.name }}</h4>
       </div>
+
+      <ngb-carousel>
+        @for (picture of featuredproject.pictures; track picture) {
+        <ng-template ngbSlide>
+          <div class="img-wrapper">
+            <img src="{{ picture }}" alt="slide" />
+          </div>
+        </ng-template>
+        }
+      </ngb-carousel>
+
+      <p class="mt-2">
+        {{ featuredproject.summary }}
+      </p>
+      <p>
+        Visit the portfolio section to learn more!
+      </p>
     </div>
   </div>
 </div>

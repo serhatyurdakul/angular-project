@@ -21,30 +21,11 @@ export class ProjectCardComponent {
   private modalService = inject(NgbModal);
   closeResult = '';
 
-
-  // this.modalService.open(content, { size: 'lg' });
-
-
-
   OpenProjectModal() {
-   
-    const modalRef = this.modalService.open(ProjectModalComponent,{ size: 'lg' ,centered: true });
-    modalRef.componentInstance.project = this.project
-  
-    // modalRef.componentInstance.name = 'World';
-    // modalRef.componentInstance.initialState = {projec:this.project}
-    
-    // this.modalService.open(content, { size: 'lg' });
+    const modalRef = this.modalService.open(ProjectModalComponent, {
+      size: 'lg',
+      centered: true,
+    });
+    modalRef.componentInstance.project = this.project;
   }
-
-  // open() {
-  // 	const modalRef = this.modalService.open(ProjectModalComponent);
-  // 	modalRef.componentInstance.name = 'World';
-  // }
-
-  // OpenProjectModal() {
-  //   const modalOptions: NgbModalOptions = {
-  //     windowClass: "modal-lg"
-  //   };
-  // }
 }

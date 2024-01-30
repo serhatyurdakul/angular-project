@@ -6,22 +6,19 @@
     <h5 class="card-title">{{ project.name }}</h5>
     <p class="card-text">
       {{ project.summary }}
-      <!-- This is a sample project for demonstration purposes. -->
     </p>
 
-
-    <!-- <button class="btn btn-lg btn-primary" (click)="open()">View More</button> -->
-    <button class="btn btn-lg btn-primary" (click)="OpenProjectModal()">View More</button>
-
-    
-    <!-- <button class="btn btn-lg btn-primary" (click)="open(content)">View More</button> -->
-
+    <button class="btn btn-lg btn-primary" (click)="OpenProjectModal()">
+      View More
+    </button>
   </div>
 
   <div class="card-footer">
-    <div class="d-flex flex-wrap  justify-content-center">
+    <div class="d-flex flex-wrap justify-content-center">
       @for (tag of project.tags; track tag) {
-      <div class="tag mb-1 me-2" [style.background-color]="tag.color">{{ tag }}</div>
+      <div class="tag mb-1 me-2" [style.background-color]="tag.color">
+        {{ tag }}
+      </div>
       }
     </div>
   </div>
