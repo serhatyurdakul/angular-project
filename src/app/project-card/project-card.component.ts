@@ -24,9 +24,16 @@ export class ProjectCardComponent {
 
   // this.modalService.open(content, { size: 'lg' });
 
+
+
   OpenProjectModal() {
-    const modalRef = this.modalService.open(ProjectModalComponent,{ size: 'lg' ,centered: true});
-    modalRef.componentInstance.name = 'World';
+   
+    const modalRef = this.modalService.open(ProjectModalComponent,{ size: 'lg' ,centered: true });
+    modalRef.componentInstance.project = this.project
+  
+    // modalRef.componentInstance.name = 'World';
+    // modalRef.componentInstance.initialState = {projec:this.project}
+    
     // this.modalService.open(content, { size: 'lg' });
   }
 

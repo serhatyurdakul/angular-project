@@ -1,6 +1,7 @@
-import { NgbModalOptions } from './../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-config.d';
-import { Component } from '@angular/core';
 
+import { Project } from '../_models/Project';
+import { Component, inject, Input } from '@angular/core';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-project-modal',
   standalone: true,
@@ -9,5 +10,8 @@ import { Component } from '@angular/core';
   styleUrl: './project-modal.component.css',
 })
 export class ProjectModalComponent {
+  activeModal = inject(NgbActiveModal);
+
+  project = {} as Project;
 
 }
