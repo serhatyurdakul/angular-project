@@ -4,7 +4,7 @@ export class Tag {
   static readonly ANGULAR = new Tag('Angular', '#dd0032');
   static readonly REACT = new Tag('React', '#0a7ea4');
   static readonly VUE = new Tag('Vue', '#42b883');
-  static readonly NODEJS = new Tag('Node.js', '#046e01');
+  static readonly SVELTE = new Tag('Svelte', '#ff3e00');
   static readonly PYTHON = new Tag('Python', '#134611');
   static readonly JAVA = new Tag('Java', '#7a736e');
 
