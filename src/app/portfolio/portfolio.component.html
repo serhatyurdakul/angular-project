@@ -1,175 +1,179 @@
-<div class="container">
-  <div class="mb-4 ">
-    <div>
-      <button
-        type="button"
-        class="btn btn-outline-primary mb-2 me-2"
-        (click)="isCollapsed = !isCollapsed"
-        [attr.aria-expanded]="!isCollapsed"
-        aria-controls="collapseExample"
-      >
-        Filter
-      </button>
-      <button
-        type="button"
-        class="btn btn-outline-secondary mb-2"
-        (click)="ResetFilters()"
-        [hidden]="!filtering"
-      >
-        Reset
-      </button>
-    </div>
 
-    <div [(ngbCollapse)]="isCollapsed">
-      <!-- <div class="border mb-2 shadow-sm " style="width: 385px"> -->
-      <div class="border border border-primary-subtle mb-2 shadow-sm rounded-2">
-        <form>
-          <div class="row m-1">
-            <div class="col  ">
-              <small><b>Languages:</b></small>
-              <div class="d-flex flex-wrap column-gap-4 row-gap-1">
-                <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      id="typescript"
-                      type="checkbox"
-                      class="form-check-input position-static me-2"
-                      [(ngModel)]="typescript"
-                      (change)="Filter()"
-                      name="TypeScript"
-                    />
-                    <label for="typescript" class="form-check-label small"
-                      >TypeScript</label
-                    >
+<div class="container my-5 border rounded-2 shadow-sm p-5">
+
+    <h2 class="text-center">Portfolio</h2>
+    <div class="mb-4 ">
+      <div>
+        <button
+          type="button"
+          class="btn btn-outline-primary mb-2 me-2"
+          (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed"
+          aria-controls="collapseExample"
+        >
+          Filter
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary mb-2"
+          (click)="ResetFilters()"
+          [hidden]="!filtering"
+        >
+          Reset
+        </button>
+      </div>
+  
+      <div [(ngbCollapse)]="isCollapsed">
+        <!-- <div class="border mb-2 shadow-sm " style="width: 385px"> -->
+        <div class="border border border-primary-subtle mb-2 shadow-sm rounded-2">
+          <form>
+            <div class="row m-1">
+              <div class="col  ">
+                <small><b>Languages:</b></small>
+                <div class="d-flex flex-wrap column-gap-4 row-gap-1">
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        id="typescript"
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="typescript"
+                        (change)="Filter()"
+                        name="TypeScript"
+                      />
+                      <label for="typescript" class="form-check-label small"
+                        >TypeScript</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        id="javascript"
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="javascript"
+                        (change)="Filter()"
+                        name="JavaScript"
+                      />
+                      <label for="javascript" class="form-check-label small"
+                        >JavaScript</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        id="java"
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="java"
+                        (change)="Filter()"
+                        name="Java"
+                      />
+                      <label for="java" class="form-check-label small"
+                        >Java</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        id="python"
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="python"
+                        (change)="Filter()"
+                        name="Python"
+                      />
+                      <label for="python" class="form-check-label small"
+                        >Python</label
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      id="javascript"
-                      type="checkbox"
-                      class="form-check-input position-static me-2"
-                      [(ngModel)]="javascript"
-                      (change)="Filter()"
-                      name="JavaScript"
-                    />
-                    <label for="javascript" class="form-check-label small"
-                      >JavaScript</label
-                    >
+              </div>
+  
+              <div class="vr p-0 bg-primary"></div>
+  
+              <div class="col ">
+                <small class="df"><b>Frameworks & Libraries:</b></small>
+                <div class="d-flex flex-wrap column-gap-4 row-gap-1">
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        id="angular"
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="angular"
+                        (change)="Filter()"
+                        name="TypeScript"
+                      />
+                      <label for="angular" class="form-check-label small"
+                        >Angular</label
+                      >
+                    </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      id="java"
-                      type="checkbox"
-                      class="form-check-input position-static me-2"
-                      [(ngModel)]="java"
-                      (change)="Filter()"
-                      name="Java"
-                    />
-                    <label for="java" class="form-check-label small"
-                      >Java</label
-                    >
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        id="vue"
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="vue"
+                        (change)="Filter()"
+                        name="Vue"
+                      />
+                      <label for="vue" class="form-check-label small">Vue</label>
+                    </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      id="python"
-                      type="checkbox"
-                      class="form-check-input position-static me-2"
-                      [(ngModel)]="python"
-                      (change)="Filter()"
-                      name="Python"
-                    />
-                    <label for="python" class="form-check-label small"
-                      >Python</label
-                    >
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        id="svelte"
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="svelte"
+                        (change)="Filter()"
+                        name="Svelte"
+                      />
+                      <label for="svelte" class="form-check-label small"
+                        >Svelte</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        id="react"
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="react"
+                        (change)="Filter()"
+                        name="React"
+                      />
+                      <label for="react" class="form-check-label small"
+                        >React</label
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="vr p-0 bg-primary"></div>
-
-            <div class="col ">
-              <small class="df"><b>Frameworks & Libraries:</b></small>
-              <div class="d-flex flex-wrap column-gap-4 row-gap-1">
-                <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      id="angular"
-                      type="checkbox"
-                      class="form-check-input position-static me-2"
-                      [(ngModel)]="angular"
-                      (change)="Filter()"
-                      name="TypeScript"
-                    />
-                    <label for="angular" class="form-check-label small"
-                      >Angular</label
-                    >
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      id="vue"
-                      type="checkbox"
-                      class="form-check-input position-static me-2"
-                      [(ngModel)]="vue"
-                      (change)="Filter()"
-                      name="Vue"
-                    />
-                    <label for="vue" class="form-check-label small">Vue</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      id="svelte"
-                      type="checkbox"
-                      class="form-check-input position-static me-2"
-                      [(ngModel)]="svelte"
-                      (change)="Filter()"
-                      name="Svelte"
-                    />
-                    <label for="svelte" class="form-check-label small"
-                      >Svelte</label
-                    >
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      id="react"
-                      type="checkbox"
-                      class="form-check-input position-static me-2"
-                      [(ngModel)]="react"
-                      (change)="Filter()"
-                      name="React"
-                    />
-                    <label for="react" class="form-check-label small"
-                      >React</label
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="row d-flex justify-content-center">
-    @for (project of projects; track project) {
-    <div
-      class="col-lg-4 col-md-6 mb-4"
-      style="max-width: 380px; min-width: 380px"
-    >
-      <app-project-card [project]="project"></app-project-card>
+  
+    <div class="row d-flex justify-content-center">
+      @for (project of projects; track project) {
+      <div
+        class="col-lg-4 col-md-6 mb-4"
+        style="max-width: 380px; min-width: 380px"
+      >
+        <app-project-card [project]="project"></app-project-card>
+      </div>
+      }
     </div>
-    }
   </div>
-</div>
+  
