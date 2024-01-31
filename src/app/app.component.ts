@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { CommonModule } from '@angular/common';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAccordionModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     NgbModule,
     FormsModule,
+    NgbAccordionModule,
   ],
 })
 export class AppComponent {
