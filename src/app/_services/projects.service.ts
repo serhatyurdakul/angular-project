@@ -9,32 +9,36 @@ export class ProjectsService {
   projects: Project[] = [
     {
       id: 0,
+      name: 'e-Commerce Web App  (HTML, CSS and JavaScript)',
+      pictures: [
+        '../../assets/images/image1.png',
+        '../../assets/images/image2.png',
+        '../../assets/images/image3.png',
+      ],
+      projectLink:
+        'https://github.com/serhatyurdakul/e-commerce-app-html-css-js',
+      summary: 'Fullstack web app developed using Angular and Node.JS',
+      description:
+        'e-Commerce web app developed using only HTML, CSS and JavaScript. Full responsive, mobile compatible, ',
+      tags: [Tag.JAVASCRIPT],
+    },
+
+    {
+      id: 1,
       name: 'Sample Python Project',
       pictures: [
         '../../assets/images/image1.png',
         '../../assets/images/image2.png',
         '../../assets/images/image3.png',
       ],
-      projectLink: '//www.github.com',
+      projectLink:
+        'https://github.com/serhatyurdakul/e-commerce-app-html-css-js',
       summary: 'Python project that analyzes stock market data.',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'e-Commerce web app developed using only HTML, CSS and JavaScript. Full responsive, mobile compatible, ',
       tags: [Tag.PYTHON],
     },
-    {
-      id: 1,
-      name: 'Sample Angular App',
-      pictures: [
-        '../../assets/images/image1.png',
-        '../../assets/images/image2.png',
-        '../../assets/images/image3.png',
-      ],
-      projectLink: '//www.github.com',
-      summary: 'Fullstack web app developed using Angular and Node.JS',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
-    },
+
     {
       id: 2,
       name: 'Sample .Net App',
@@ -43,10 +47,11 @@ export class ProjectsService {
         '../../assets/images/image2.png',
         '../../assets/images/image3.png',
       ],
-      projectLink: '//www.github.com',
-      summary: 'Fullstack web app developed using React and ASP.NET',
+      projectLink:
+        'https://github.com/serhatyurdakul/e-commerce-app-html-css-js',
+      summary: 'e-Commerce web app developed using HTML, CSS and JavaScript',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'e-Commerce web app developed using only HTML, CSS and JavaScript. Full responsive, mobile compatible, ',
       tags: [Tag.REACT, Tag.JAVASCRIPT],
     },
     {
@@ -57,10 +62,10 @@ export class ProjectsService {
         '../../assets/images/image2.png',
         '../../assets/images/image3.png',
       ],
-      projectLink: '//www.github.com',
+      projectLink: 'https://github.com/serhatyurdakul/',
       summary: 'Web API Project that was developed for a class project.',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'e-Commerce web app developed using only HTML, CSS and JavaScript. Full responsive, mobile compatible, ',
       tags: [Tag.JAVA, Tag.ANGULAR],
     },
     {
@@ -71,11 +76,11 @@ export class ProjectsService {
         '../../assets/images/image2.png',
         '../../assets/images/image3.png',
       ],
-      projectLink: '//www.github.com',
+      projectLink: 'https://github.com/serhatyurdakul/',
       summary:
         'Developed a chrome extension that tracks the prices of furniture.',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'e-Commerce web app developed using only HTML, CSS and JavaScript. Full responsive, mobile compatible, ',
       tags: [Tag.JAVASCRIPT],
     },
     {
@@ -86,11 +91,11 @@ export class ProjectsService {
         '../../assets/images/image2.png',
         '../../assets/images/image3.png',
       ],
-      projectLink: '//www.github.com',
+      projectLink: 'https://github.com/serhatyurdakul/',
       summary:
         'Mobile app developed in java that tracks the departure and arrival of trains.',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'e-Commerce web app developed using only HTML, CSS and JavaScript. Full responsive, mobile compatible, ',
       tags: [Tag.JAVA],
     },
   ];

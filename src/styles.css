@@ -15,4 +15,5 @@
 .img-wrapper img{
   display: block;
   width: 100%;
+  height: 320px;
 }
