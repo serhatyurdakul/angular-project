@@ -11,11 +11,24 @@
           height="256"
           class="rounded-circle my-3"
         />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse,
-          doloremque est cumque nam sed eveniet voluptas dolores fuga, rerum
-          maxime odit? Quod sint et facere consectetur, accusamus officiis?
-        </p>
+
+        <ul style="text-align: left; list-style: none; line-height: 24px;">
+          <li>
+            Detail-oriented, passionate and dedicated Software Engineer with a
+            focus on front-end development.
+          </li>
+          <br>
+          <li>
+            Ability to collaborate in team environments to deliver innovative
+            solutions.
+          </li>
+          <br>
+          <li>
+            Seeking to leverage skills and knowledge in order to contribute
+            effectively to dynamic projects while continuously expanding
+            expertise in the field.
+          </li>
+        </ul>
       </div>
     </div>
     <!-- Featured Project -->
@@ -29,7 +42,7 @@
       <ngb-carousel>
         @for (picture of featuredproject.pictures; track picture) {
         <ng-template ngbSlide>
-          <div class="img-wrapper ">
+          <div class="img-wrapper">
             <img src="{{ picture }}" alt="slide" />
           </div>
         </ng-template>
@@ -39,9 +52,7 @@
       <p class="mt-2">
         {{ featuredproject.summary }}
       </p>
-      <p>
-        Visit the portfolio section to learn more!
-      </p>
+      <p>Visit the portfolio section to learn more!</p>
     </div>
   </div>
 </div>
