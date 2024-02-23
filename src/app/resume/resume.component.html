@@ -1,4 +1,4 @@
-<div class="container my-5 border rounded-2 shadow-sm p-5">
+<div class="container">
   <div class="text-center">
     <h1 class="mb-5">Resume</h1>
     <button (click)="DownloadFile()" class="btn btn-success mb-5 shadow border">
@@ -157,7 +157,7 @@
         </div>
       </div>
     </div>
-    <div ngbAccordionItem>
+    <div ngbAccordionItem [collapsed]="false">
       <h2 ngbAccordionHeader>
         <button
           class="bg-success-subtle border shadow-sm"
@@ -182,7 +182,7 @@
               </div>
               <div class="vr p-0"></div>
               <div class="col px-3">
-                <h3>Programming Languages</h3>
+                <h3>Frameworks & Libraries</h3>
                 <ul>
                   <li>Angular</li>
                   <li>React</li>
@@ -193,7 +193,7 @@
               </div>
               <div class="vr p-0"></div>
               <div class="col px-3">
-                <h3>Foreign language</h3>
+                <h3>Languages</h3>
                 <ul>
                   <li style="font-weight: 700; list-style: none" class="my-2">
                     English:

@@ -19,7 +19,7 @@ export class PortfolioComponent implements OnInit {
   projects = {} as Project[];
 
   //filter collapse
-  isCollapsed: boolean = true;
+  isCollapsed: boolean = false;
 
   //languages
   typescript: boolean = false;
